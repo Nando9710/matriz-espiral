@@ -1,0 +1,22 @@
+Al ver el ejercicio por 1ra vez y al comienzo de mis analisis, lo primero que intento encontrar es un patron en las diagonales, un patron que me permitiera calcular las diagonales sin tener que generar la matriz que a simple vista es lo mas complejo.
+Luego de unos minutos no encontre ningun patron repetitivo en los numeros de la diagonal. 
+
+Entonces intente buscar un patron repetitivo igualmente en los numeros de las columnas y filas, para ver si podia generar la matriz de alguna manera sencilla sin tener que estar yendo punto por punto de la matriz e ir restando o sumando numeros.
+Tampoco encontre ningun patron, me di cuenta que debia hacer carpinteria de codigo si queria generar esa matriz para finalmente calcular sus diagonales.
+
+Podia empezar por el centro teniendo el numero 1 y empezar a sumar 1 por 1 hasta llegar al ultimo numero (que es la dimension de la matriz al cuadrado).
+Pero me parecio mas sencillo empezar por el mayor numero, es mas accesible el ultimo numero de la 1ra fila que tener que encontrar el punto central de toda la matriz y a partir de ahi hacer algo que de momento no tenia ni idea.
+
+Tenia que ir moviendome por filas y columnas de izquierda a derecha. 
+1ro me enfoque en obtener la parte exterior de la matriz, con eso ya tenia un ciclo completo de espiral, al principo tuve algunos problemas con los ciclos 'for' por los limites y tener que ir saltando de filas a columnas.
+Despues de un tiempo y un par de minutos de analisis logre obtener la parte exterior de la matriz.
+
+Logre obtener la parte exterior pero me di cuenta que el codigo era inentendible, y no sabia encontar los errores que tenia, pues necesitaba dejar las variables de recorrido de la matriz en el punto especifico para que en el proximo ciclo dieran otra vuelta completa sin problemas y rellenaran nuevamente la matriz
+
+Entonces cree variables bien legibles, para cada fila y columna que iba recorriendo y fui modificando sus valores luego de cada ciclo 'for' para que en la sgte iteracion todo funcionara correctamente
+
+Solo me quedaba poner una condicion de ruptura del ciclo while cuando el numero llegara a 1
+
+Teniendo la matriz la suma de las diagonales no fue nada complicado, era solo ir iterando la matriz (filas) y en cada iteracion aumentar o disminuir la posicion de la columnas segun la direccion de la diagonal
+
+Saludos
